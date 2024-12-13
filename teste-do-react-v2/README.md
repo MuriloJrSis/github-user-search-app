@@ -50,25 +50,30 @@ A interface é intuitiva, responsiva e estilizada para oferecer uma boa experiê
 
 ## Como Rodar o Projeto
 
+## Como executar o projeto localmente
+
 1. Clone o repositório:
-   ```bash
-   git clone https://github.com/SEU_USUARIO/github-user-search-app.git
+    ```bash
+    git clone https://github.com/SeuUsuario/github-user-search-app.git
+    ```
 
 2. Navegue até a pasta do projeto:
     ```bash
-cd github-user-search-app
+    cd github-user-search-app
+    ```
 
 3. Instale as dependências:
     ```bash
-npm install
+    npm install
+    ```
 
 4. Inicie a aplicação:
     ```bash
-npm start
+    npm start
+    ```
 
 5. Acesse no navegador:
-    ```bash
-http://localhost:3000
+    [http://localhost:3000](http://localhost:3000)
 
 ## Estrutura do projeto
 
