@@ -1,0 +1,28 @@
+/* Remove as margens e os paddings padrão de todos os elementos. 
+   Garante um comportamento mais consistente entre navegadores. */
+* {
+    margin: 0;
+    padding: 0;
+    /* Define o box-sizing como "border-box", 
+       para que o padding e a borda sejam incluídos nas dimensões totais do elemento. */
+    box-sizing: border-box;
+}
+
+/* Remove a decoração padrão de links, como sublinhado. 
+   Também define a cor como uma variável personalizada "var(--cor-branca)". */
+a {
+    text-decoration: none;
+    color: var(--cor-branca);
+}
+
+/* Remove os estilos padrão das listas não ordenadas. 
+   As listas não terão marcadores. */
+ul {
+    list-style: none;
+}
+
+/* Limita a largura máxima das imagens ao tamanho do elemento pai, 
+   evitando que elas ultrapassem os limites de layout. */
+img {
+    max-width: 100%;
+}

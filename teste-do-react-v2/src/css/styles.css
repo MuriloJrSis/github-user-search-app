@@ -1,0 +1,239 @@
+/* Importa a fonte "Kumbh Sans" do Google Fonts, 
+   com peso de 400 (normal) e 700 (negrito). */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* Define estilos básicos para todos os elementos. 
+      Remove margens e paddings padrão e define peso da fonte como 300. */
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+/* Garante que as imagens nunca ultrapassem o tamanho do contêiner pai. */
+img {
+  max-width: 100%;
+}
+
+/* Estiliza o corpo da página, aplicando uma cor de fundo escura, 
+      a fonte "Kumbh Sans" e centralizando o texto. */
+body {
+  background-color: #24292e;
+  font-family: "Kumbh Sans", sans-serif;
+  text-align: center;
+  padding-bottom: 100px;
+  /* Adiciona um espaço no final da página. */
+}
+
+/* Estiliza o elemento <main>, centralizando seu conteúdo 
+      com flexbox e organizando os filhos verticalmente. */
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0 0;
+  /* Adiciona espaço na parte superior. */
+}
+
+/* Estilo para o ícone do GitHub. */
+.devicon-github-original {
+  font-size: 60px;
+  /* Define tamanho do ícone. */
+  margin-bottom: 30px;
+  /* Espaço abaixo do ícone. */
+  color: #FFFFFF;
+  /* Cor branca para o ícone. */
+}
+
+/* Adiciona padding aos elementos com a classe "section". */
+.section {
+  padding: 70px 0;
+}
+
+/* Estilo para o contêiner principal da página. */
+.container {
+  width: 60%;
+  /* Ocupa 60% da largura da tela. */
+  max-width: 960px;
+  /* Limita a largura máxima a 960px. */
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 25px 50px -12px;
+  /* Adiciona sombra ao contêiner. */
+  background-color: #fff;
+  /* Cor de fundo branca. */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  /* Arredonda os cantos. */
+  padding: 30px;
+  margin: 0 auto;
+  /* Centraliza horizontalmente. */
+}
+
+/* Estiliza o cabeçalho do contêiner. */
+.container header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0;
+}
+
+/* Estilo para o título dentro do cabeçalho. */
+.container header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* Estiliza o campo de entrada de texto para busca de usuários. */
+.container header #input-search {
+  width: 400px;
+  font-size: 17px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid grey;
+}
+
+/* Estiliza o botão de busca. */
+.container header #btn-search {
+  width: 200px;
+  font-size: 17px;
+  margin: 20px auto 0;
+  padding: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  /* Adiciona um cursor indicando que é clicável. */
+  border: 1px solid grey;
+}
+
+/* Estilo para o botão ao passar o mouse por cima. */
+.container header #btn-search:hover {
+  background-color: hotpink;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* Estiliza a seção de dados do perfil. */
+.container .profile-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+/* Estilo para as informações do perfil. */
+.container .profile-data .info {
+  display: flex;
+  flex-wrap: wrap;
+  /* Permite quebra de linha para elementos flexíveis. */
+  align-items: center;
+}
+
+/* Estilo para a seção de dados do usuário. */
+.container .profile-data .info .data {
+  padding: 40px;
+  width: 50%;
+}
+
+/* Estilo para a imagem do perfil do usuário. */
+.container .profile-data .info img {
+  width: 50%;
+  border-radius: 50%;
+  /* Torna a imagem circular. */
+  border: 10px solid hotpink;
+  /* Adiciona borda rosa. */
+}
+
+/* Estilo para o nome do usuário no perfil. */
+.container .profile-data .info h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Estilo para a biografia do usuário. */
+.container .profile-data .info p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  /* Aumenta o espaçamento entre linhas. */
+}
+
+/* Estilo para a seção de repositórios. */
+.container .profile-data .repositories h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.container .profile-data .repositories ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Estiliza os itens da lista de repositórios. */
+.container .profile-data .repositories ul li a {
+  padding: 20px;
+  border: 1px solid grey;
+  margin: 20px;
+  display: block;
+  border-radius: 7px;
+  transition: 0.3s ease-in-out;
+  /* Suaviza transições de estilos. */
+}
+
+/* Estilo para itens da lista ao passar o mouse. */
+.container .profile-data .repositories ul li a:hover {
+  background-color: hotpink;
+  color: #fff;
+}
+
+/* Esconde a seção de perfil quando necessário. */
+.container .profile-data.hide {
+  display: none;
+}
+
+/* Responsividade para telas menores que 1280px. */
+@media (max-width: 1280px) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+    border-radius: 20px;
+  }
+
+  .container header {
+    width: 100%;
+  }
+
+  .container header h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+/* Responsividade para telas menores que 768px. */
+@media (max-width: 768px) {
+
+  .container header #input-search,
+  .container header #btn-search {
+    width: 100%;
+  }
+}
+
+/* Responsividade para telas menores que 425px. */
+@media (max-width: 425px) {
+  main {
+    padding: 15% 0;
+  }
+
+  .container .profile-data .info img {
+    margin-bottom: 20px;
+  }
+
+  .container .profile-data .info img,
+  .container .profile-data .info .data {
+    width: 100%;
+    padding: 0;
+  }
+}
