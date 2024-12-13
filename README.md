@@ -92,7 +92,7 @@ A interface é intuitiva, responsiva e estilizada para oferecer uma boa experiê
     
 ## API Utilizada
 
-  GitHub API
+### GitHub API
 
 **Documentação oficial:**  
 [GitHub REST API](https://docs.github.com/en/rest)
