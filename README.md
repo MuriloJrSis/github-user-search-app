@@ -75,20 +75,21 @@ A interface é intuitiva, responsiva e estilizada para oferecer uma boa experiê
 5. Acesse no navegador:
     [http://localhost:3000](http://localhost:3000)
 
-## Estrutura do projeto
 
-github-user-search-app/
-├── public/              # Arquivos públicos (favicon, index.html, etc.)
-├── src/                 # Código-fonte do projeto
-│   ├── components/      # Componentes reutilizáveis
-│   ├── styles/          # Arquivos de estilo (CSS)
-│   ├── App.js           # Componente principal
-│   ├── index.js         # Ponto de entrada do React
-│   └── ...              # Outros arquivos do projeto
-├── .gitignore           # Arquivos/folders ignorados pelo Git
-├── package.json         # Dependências e scripts
-└── README.md            # Documentação do projeto
+### Estrutura de Projeto
 
+- **github-user-search-app/**
+  - **public/**: Arquivos públicos (favicon, index.html, etc.)
+  - **src/**: Código-fonte do projeto
+    - **components/**: Componentes reutilizáveis
+    - **styles/**: Arquivos de estilo (CSS)
+    - **App.js**: Componente principal
+    - **index.js**: Ponto de entrada do React
+    - Outros arquivos do projeto
+  - **.gitignore**: Arquivos/pastas ignorados pelo Git
+  - **package.json**: Dependências e scripts
+  - **README.md**: Documentação do projeto
+    
 ## API Utilizada
 
 GitHub API
