@@ -33,8 +33,8 @@ A interface é intuitiva, responsiva e estilizada para oferecer uma boa experiê
 
 ## Prints
 
-![Tela Inicial](src/assets/tela-inicial.png)
-![Detalhes do Perfil](src/assets/detalhes-perfil.png)
+![Tela Inicial](assets/tela-inicial.png)
+![Detalhes do Perfil](assets/detalhes-perfil.png)
 
 ## Tecnologias Utilizadas
 
