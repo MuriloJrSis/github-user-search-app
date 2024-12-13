@@ -92,11 +92,15 @@ A interface é intuitiva, responsiva e estilizada para oferecer uma boa experiê
     
 ## API Utilizada
 
-GitHub API
-Documentação oficial: GitHub REST API
-Endpoints utilizados:
-Buscar usuário: https://api.github.com/users/{username}
-Listar repositórios: https://api.github.com/users/{username}/repos
+  GitHub API
+
+**Documentação oficial:**  
+[GitHub REST API](https://docs.github.com/en/rest)
+
+**Endpoints utilizados:**  
+
+- **Buscar usuário:** [https://api.github.com/users/{username}](https://api.github.com/users/{username})
+- **Listar repositórios:** [https://api.github.com/users/{username}/repos](https://api.github.com/users/{username}/repos)
 
 ## Melhorias Futuras
 
