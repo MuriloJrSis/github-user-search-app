@@ -75,27 +75,32 @@ A interface é intuitiva, responsiva e estilizada para oferecer uma boa experiê
 5. Acesse no navegador:
     [http://localhost:3000](http://localhost:3000)
 
-## Estrutura do projeto
 
-github-user-search-app/
-├── public/              # Arquivos públicos (favicon, index.html, etc.)
-├── src/                 # Código-fonte do projeto
-│   ├── components/      # Componentes reutilizáveis
-│   ├── styles/          # Arquivos de estilo (CSS)
-│   ├── App.js           # Componente principal
-│   ├── index.js         # Ponto de entrada do React
-│   └── ...              # Outros arquivos do projeto
-├── .gitignore           # Arquivos/folders ignorados pelo Git
-├── package.json         # Dependências e scripts
-└── README.md            # Documentação do projeto
+### Estrutura de Projeto
 
+- **github-user-search-app/**
+  - **public/**: Arquivos públicos (favicon, index.html, etc.)
+  - **src/**: Código-fonte do projeto
+    - **components/**: Componentes reutilizáveis
+    - **styles/**: Arquivos de estilo (CSS)
+    - **App.js**: Componente principal
+    - **index.js**: Ponto de entrada do React
+    - Outros arquivos do projeto
+  - **.gitignore**: Arquivos/pastas ignorados pelo Git
+  - **package.json**: Dependências e scripts
+  - **README.md**: Documentação do projeto
+    
 ## API Utilizada
 
-GitHub API
-Documentação oficial: GitHub REST API
-Endpoints utilizados:
-Buscar usuário: https://api.github.com/users/{username}
-Listar repositórios: https://api.github.com/users/{username}/repos
+### GitHub API
+
+**Documentação oficial:**  
+[GitHub REST API](https://docs.github.com/en/rest)
+
+**Endpoints utilizados:**  
+
+- **Buscar usuário:** [https://api.github.com/users/{username}](https://api.github.com/users/{username})
+- **Listar repositórios:** [https://api.github.com/users/{username}/repos](https://api.github.com/users/{username}/repos)
 
 ## Melhorias Futuras
 
@@ -106,12 +111,15 @@ Estilizações mais avançadas.
 
 ## Autor
 
-Murilo Júnior
+**Murilo Júnior**  
 
-https://github.com/MuriloJrSis
-LinkedIn
+- [GitHub](https://github.com/MuriloJrSis)  
+- [LinkedIn](https://www.linkedin.com/in/seu-perfil)  
 
-Licença
-Este projeto está licenciado sob a MIT License.
+---
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
 
 
