@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# GitHub User Search App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicação React para buscar informações de usuários do GitHub utilizando a API oficial do GitHub. Este projeto é ideal para praticar consumo de APIs, manipulação de dados no React e estilização com CSS.
 
-## Available Scripts
+## O que este projeto faz?
 
-In the project directory, you can run:
+Este aplicativo permite que os usuários pesquisem perfis do GitHub pelo nome de usuário. Ao realizar a busca, ele exibe as seguintes informações sobre o perfil encontrado:
 
-### `npm start`
+- Foto de perfil.
+- Nome de exibição.
+- Biografia (quando disponível).
+- Número de repositórios públicos.
+- Lista dos repositórios públicos com links para cada um.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+A interface é intuitiva, responsiva e estilizada para oferecer uma boa experiência ao usuário.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Funcionalidades
 
-### `npm test`
+- **Busca Dinâmica**: Digite o nome de usuário do GitHub para encontrar informações de forma rápida.
+- **Detalhes do Perfil**: Exibição de informações detalhadas do perfil do usuário:
+  - Nome
+  - Bio
+  - Repositórios públicos
+  - Foto de perfil
+- Listagem dos repositórios públicos do usuário.
+- **Lista de Repositórios**: Confira os repositórios públicos do usuário com links diretos.
+- **Interface Responsiva**: Funciona bem em dispositivos móveis e desktops.
+- **Estilização Moderna**: Interface limpa com design atrativo.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Demonstração
 
-### `npm run build`
+[Link para o projeto ao vivo](https://github.com/MuriloJrSis/github-user-search-app)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Prints
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Tela Inicial](link-para-imagem)
+![Detalhes do Perfil](link-para-imagem-detalhe)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tecnologias Utilizadas
 
-### `npm run eject`
+- **React**: Biblioteca para construção da interface do usuário.
+- **Fetch API**: Para comunicação com a API do GitHub.
+- **CSS Flexbox/Grid**: Para estilização e layout responsivo.
+- **Devicon**: Ícones de tecnologia.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Pré-requisitos
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js instalado
+- Navegador atualizado
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Como Rodar o Projeto
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/SEU_USUARIO/github-user-search-app.git
 
-## Learn More
+2. Navegue até a pasta do projeto:
+    ```bash
+cd github-user-search-app
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Instale as dependências:
+    ```bash
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Inicie a aplicação:
+    ```bash
+npm start
 
-### Code Splitting
+5. Acesse no navegador:
+    ```bash
+http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Estrutura do projeto
 
-### Analyzing the Bundle Size
+github-user-search-app/
+├── public/              # Arquivos públicos (favicon, index.html, etc.)
+├── src/                 # Código-fonte do projeto
+│   ├── components/      # Componentes reutilizáveis
+│   ├── styles/          # Arquivos de estilo (CSS)
+│   ├── App.js           # Componente principal
+│   ├── index.js         # Ponto de entrada do React
+│   └── ...              # Outros arquivos do projeto
+├── .gitignore           # Arquivos/folders ignorados pelo Git
+├── package.json         # Dependências e scripts
+└── README.md            # Documentação do projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## API Utilizada
 
-### Making a Progressive Web App
+GitHub API
+Documentação oficial: GitHub REST API
+Endpoints utilizados:
+Buscar usuário: https://api.github.com/users/{username}
+Listar repositórios: https://api.github.com/users/{username}/repos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Melhorias Futuras
 
-### Advanced Configuration
+Implementar paginação na listagem de repositórios.
+Adicionar testes unitários.
+Suporte a múltiplos idiomas.
+Estilizações mais avançadas.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Autor
 
-### Deployment
+Murilo Júnior
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+https://github.com/MuriloJrSis
+LinkedIn
 
-### `npm run build` fails to minify
+Licença
+Este projeto está licenciado sob a MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
